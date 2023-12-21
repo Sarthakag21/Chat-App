@@ -33,10 +33,9 @@ Engage in spontaneous conversations with fellow registered users and make new co
 
 - Clone the repository: 
     `git clone https://github.com/yourusername/Chat-App.git`
-- Open the project in Android Studio.
-- Build and run the app on an Android emulator or physical device.
+- Open the project in Visual Studio Code.
+- Build and run the app on localhost of your PC.
 
-Note: Make sure you have the latest Android SDK and necessary dependencies installed.
 ## Usage
 
 - Register a new account or log in with your existing credentials.
