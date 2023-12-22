@@ -6,6 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios';
 import { registerRoute } from "../utils/APIRoutes";
+import SocialLoginButton from "../components/SocialLoginButton";
 function Register() {
   const navigate = useNavigate()
   const [values, setValues] = useState({
@@ -103,7 +104,8 @@ function Register() {
             name="confirmPassword"
             onChange={(e) => handleChange(e)}
           />
-          <button type="submit">Create User</button>
+          <button type="submit" className="btn">Create User</button>
+          <SocialLoginButton/>
           <span>
             Already have an account ? <Link to="/login">Login</Link>
           </span>
@@ -156,7 +158,7 @@ const FormContainer = styled.div`
         outline: none;
       }
     }
-    button {
+    .btn {
       background-color: #997af0;
       color: white;
       padding: 1rem 2rem;
